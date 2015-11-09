@@ -4,14 +4,7 @@
  This sketch, for the Linkit ONE, waits for a SMS message
  and displays it through the Serial port.
 
- * SIM card that can receive SMS messages
-
- created 25 Feb 2012
- by Javier Zorzano / TD
-
- This example is in the public domain.
-
- http://www.arduino.cc/en/Tutorial/GSMExamplesReceiveSMS
+ This example is copied out of the MediaTek Linkit ONE Developer's Guide.
 
 */
 #include <LGSM.h>
