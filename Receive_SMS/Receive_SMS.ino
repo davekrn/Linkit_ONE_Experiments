@@ -6,6 +6,14 @@
 
  This example is copied out of the MediaTek Linkit ONE Developer's Guide.
 
+ On the serial monitor you will see the following log:
+---
+SIM ready for work!
+There is new message.
+Number:+41791234567   (sender number)
+Content:Hello World
+---
+
 */
 #include <LGSM.h>
 void setup() {
