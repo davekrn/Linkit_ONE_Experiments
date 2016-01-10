@@ -16,8 +16,15 @@ Content:Hello World
 
 */
 #include <LGSM.h>
+String initializeBuffer;    // This will store what you enter to start the serial port
+String message = "Hello World";
+
 void setup() {
   Serial.begin(9600);
+  while(Serial.available()== 0 ){}   // This will wait until anything is input by the user
+  initializeBuffer = Serial.readString();
+  Serial.println(message);
+
   while(!LSMS.ready()) delay(1000);
   Serial.println("SIM ready for work!");
 }

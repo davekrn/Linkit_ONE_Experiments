@@ -17,6 +17,8 @@ Message received: Hello are you ready?
 */
 #include <LGSM.h>
 void setup() {
+  while(!Serial)
+    delay(100);
   Serial.begin(9600);
   while(!LSMS.ready()) delay(1000);
   Serial.println("SIM ready for work!");
